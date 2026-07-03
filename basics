@@ -13,3 +13,9 @@ VALUES (1, 18, 'Coding', 'Trishul');
 
 INSERT INTO students (id, age, hobby, name) 
 VALUES (2, 19, 'Robotics', 'Rahul');
+
+
+when you insert data, it is temporarily saved in your current session, but it is not permanently written to the database yet.
+To make your changes permanent, you must explicitly tell Oracle to save them:
+
+COMMIT;
