@@ -1,0 +1,6 @@
+CREATE TABLE students (
+    id NUMBER PRIMARY KEY, 
+    age NUMBER, 
+    hobby VARCHAR(50),
+    name VARCHAR(50)
+);
