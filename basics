@@ -29,3 +29,6 @@ SELECT name, hobby FROM students;
 
 SELECT * FROM students WHERE id = 6;
 SELECT name, age FROM students WHERE age < 19;
+
+UPDATE students SET age = 19 WHERE name = 'Yashwanth';
+DELETE FROM students WHERE id = 2;
