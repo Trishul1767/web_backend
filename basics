@@ -26,3 +26,6 @@ SELECT * FROM students;
 If you only want to see specific columns, you can type their names:
 
 SELECT name, hobby FROM students;
+
+SELECT * FROM students WHERE id = 6;
+SELECT name, age FROM students WHERE age < 19;
