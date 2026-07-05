@@ -19,3 +19,10 @@ when you insert data, it is temporarily saved in your current session, but it is
 To make your changes permanent, you must explicitly tell Oracle to save them:
 
 COMMIT;
+
+To view the data you just stored, you use the SELECT statement. The asterisk (*) acts as a wildcard meaning "all columns."
+
+SELECT * FROM students;
+If you only want to see specific columns, you can type their names:
+
+SELECT name, hobby FROM students;
