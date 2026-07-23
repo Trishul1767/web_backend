@@ -49,3 +49,7 @@ INSERT INTO cars (car_id, model, student_id) VALUES (101, 'Toyota AE86', 6);
 INSERT INTO cars (car_id, model, student_id) VALUES (102, 'Nissan R34', 6);
 INSERT INTO cars (car_id, model, student_id) VALUES (103, 'Honda Civic', 8);
 COMMIT;
+
+SELECT students.name, cars.model 
+FROM students 
+JOIN cars ON students.id = cars.student_id;
