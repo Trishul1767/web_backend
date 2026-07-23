@@ -44,3 +44,8 @@ CREATE TABLE cars (
     student_id NUMBER,
     FOREIGN KEY (student_id) REFERENCES students(id)
 );
+
+INSERT INTO cars (car_id, model, student_id) VALUES (101, 'Toyota AE86', 6);
+INSERT INTO cars (car_id, model, student_id) VALUES (102, 'Nissan R34', 6);
+INSERT INTO cars (car_id, model, student_id) VALUES (103, 'Honda Civic', 8);
+COMMIT;
