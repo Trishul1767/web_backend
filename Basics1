@@ -8,6 +8,8 @@ SQL> CREATE TABLE car(
 
 Table created.
 
+insertion of rows:
+
 SQL> INSERT INTO car(name,hp,price)
   2  VALUES ('virtus',158,'20L');
 
@@ -23,6 +25,7 @@ SQL> INSERT INTO car(name,hp,price)
 
 1 row created.
 
+to show the coloumns
 SQL> SELECT * FROM car;
 
 NAME               HP PRICE
