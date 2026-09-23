@@ -67,7 +67,7 @@ virtus            158 20L
 harrier           167 25L
 RS6               455 89k
 
-displaying in descending order:
+displaying in descending order in hp:
 
 SQL> SELECT * FROM car ORDER BY hp DESC;
 
