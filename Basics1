@@ -42,6 +42,8 @@ virtus            158
 harrier           167
 RS6               455
 
+iterating (by using if kind of statement in sql):
+
 SQL> SELECT * FROM car WHERE hp>200;
 
 NAME               HP PRICE
