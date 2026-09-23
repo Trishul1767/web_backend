@@ -36,7 +36,7 @@ DELETE FROM students WHERE id = 2;
 SELECT * FROM students ORDER BY age ASC;
 SELECT * FROM students ORDER BY name DESC;
 
-
+join keyword
 
 CREATE TABLE cars (
     car_id NUMBER PRIMARY KEY,
