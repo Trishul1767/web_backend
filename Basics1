@@ -1,1 +1,85 @@
 
+SQL> CREATE TABLE car(
+  2  name VARCHAR(10),
+  3  hp NUMBER,
+  4  price VARCHAR(9)
+  5  );
+
+Table created.
+
+SQL> INSERT INTO car(name,hp,price)
+  2  VALUES ('virtus',158,'20L');
+
+1 row created.
+
+SQL> INSERT INTO car(name,price,hp)
+  2  VALUES ('harrier','25L',167);
+
+1 row created.
+
+SQL> INSERT INTO car(name,hp,price)
+  2  VALUES ('RS6',455,'89k');
+
+1 row created.
+
+SQL> SELECT * FROM car;
+
+NAME               HP PRICE
+---------- ---------- ---------
+virtus            158 20L
+harrier           167 25L
+RS6               455 89k
+
+SQL> SELECT name,hp FROM car;
+
+NAME               HP
+---------- ----------
+virtus            158
+harrier           167
+RS6               455
+
+SQL> SELECT * FROM car WHERE hp>200;
+
+NAME               HP PRICE
+---------- ---------- ---------
+RS6               455 89k
+
+SQL> SELECT name FROM car WHERE hp>200;
+
+NAME
+----------
+RS6
+
+SQL> SELECT * FROM car ORDER BY hp ASC;
+
+NAME               HP PRICE
+---------- ---------- ---------
+virtus            158 20L
+harrier           167 25L
+RS6               455 89k
+
+SQL> SELECT * FROM car ORDER BY hp DESC;
+
+NAME               HP PRICE
+---------- ---------- ---------
+RS6               455 89k
+harrier           167 25L
+virtus            158 20L
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> SELECT * FROM car;
+
+NAME               HP PRICE
+---------- ---------- ---------
+virtus            158 20L
+harrier           167 25L
+RS6               455 89k
+
+SQL> UPDATE car SET hp=560 WHERE name='RS6';
+
+1 row updated.
+
+SQL>
