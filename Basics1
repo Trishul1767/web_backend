@@ -1,3 +1,4 @@
+Table creation:
 
 SQL> CREATE TABLE car(
   2  name VARCHAR(10),
