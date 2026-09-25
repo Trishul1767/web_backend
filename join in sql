@@ -1,1 +1,92 @@
 
+SQL> ALTER TABLE students
+  2  MODIFY name VARCHAR2(10);
+
+Table altered.
+
+SQL> ALTER TABLE students
+  2  MODIFY college VARCHAR2(7);
+
+Table altered.
+
+SQL> SELECT * FROM students;
+
+NAME               ID        AGE COLLEGE
+---------- ---------- ---------- -------
+trishul             6         20 gitam
+Rohan               7         21 gitam
+Akash               8         18 gitam
+
+SQL> INSERT INTO car(name,hp,price)
+  2  VALUES('BODO',1055,'1mil');
+
+1 row created.
+
+SQL> SELECT MIN(hp) FROM car;
+
+   MIN(HP)
+----------
+       158
+
+SQL> SELECT AVG(hp) FROM car WHERE hp>200;
+
+   AVG(HP)
+----------
+       755
+
+SQL> SELECT * FROM car WHERE hp>200;
+
+NAME               HP PRICE
+---------- ---------- ---------
+RS6               455 89k
+BODO             1055 1mil
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> ALTER TABLE car ADD owner_id NUMBER;
+
+Table altered.
+
+SQL> UPDATE car SET owner_id = 6 WHERE name = 'virtus';
+
+1 row updated.
+
+SQL> UPDATE car SET owner_id = 6 WHERE name = 'RS6';
+
+1 row updated.
+
+SQL> UPDATE car SET owner_id = 7 WHERE name = 'harrier';
+
+1 row updated.
+
+SQL> UPDATE car SET owner_id = 8 WHERE name = 'BODO';
+
+1 row updated.
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> SELECT * FROM car;
+
+NAME               HP PRICE       OWNER_ID
+---------- ---------- --------- ----------
+virtus            158 20L                6
+harrier           167 25L                7
+RS6               455 89k                6
+BODO             1055 1mil               8
+
+SQL> SELECT students.name, car.name AS car_model, car.hp
+  2  FROM students
+  3  JOIN car ON students.id = car.owner_id;
+
+NAME       CAR_MODEL          HP
+---------- ---------- ----------
+trishul    virtus            158
+Rohan      harrier           167
+trishul    RS6               455
+Akash      BODO             1055
+
+SQL>
