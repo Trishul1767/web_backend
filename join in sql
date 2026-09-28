@@ -1,3 +1,4 @@
+altering the table
 
 SQL> ALTER TABLE students
   2  MODIFY name VARCHAR2(10);
