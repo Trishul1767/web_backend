@@ -10,5 +10,5 @@ To create a DataBase
 >> \q
 To quit the console
 
->> 
+>> sudo -u postgres psql -d career_db
 Now, attaching to the database
