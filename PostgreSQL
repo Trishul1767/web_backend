@@ -11,10 +11,15 @@ To create a DataBase
 To quit the console
 
 >> sudo -u postgres psql -d career_db
-Now, attaching to the database
+This opens psql and connects directly to career_db.
 
 CREATE TABLE students (
     id INTEGER PRIMARY KEY,
     name VARCHAR(100),
     cgpa NUMERIC(3,2)
 );
+
+INSERT INTO students (id, name, cgpa)
+VALUES (1, 'Trishul', 9.00);
+
+SELECT * FROM students;
