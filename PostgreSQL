@@ -6,3 +6,6 @@ To Enter the PostgreSQL console
 
 >> CREATE DATABASE career_db;
 To create a DataBase
+
+>> \q
+To quit the console
