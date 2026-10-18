@@ -25,10 +25,9 @@ VALUES (1, 'Trishul', 9.00);
 SELECT * FROM students;
 
 
-so, everytime i open the linux terminal  i gotta 
-sudo service postgresql start ( to start the server)
+sudo service postgresql start (to start the server)
 then 
 sudo -u postgres psql (to enter the console)
 postgres=#  CREATE DATABASE stdents; (to create a db)
-now, just
+then
 \c stdents (to connect to the db)
