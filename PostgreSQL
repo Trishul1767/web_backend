@@ -1,5 +1,5 @@
 >> sudo service postgresql start
 This starts the PostgreSQL server.
 
->> 
+>> sudo -u postgres psql
 To Enter the PostgreSQL console
