@@ -12,3 +12,9 @@ To quit the console
 
 >> sudo -u postgres psql -d career_db
 Now, attaching to the database
+
+CREATE TABLE students (
+    id INTEGER PRIMARY KEY,
+    name VARCHAR(100),
+    cgpa NUMERIC(3,2)
+);
