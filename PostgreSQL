@@ -3,3 +3,5 @@ This starts the PostgreSQL server.
 
 >> sudo -u postgres psql
 To Enter the PostgreSQL console
+
+>> CREATE DATABASE career_db;
