@@ -23,7 +23,9 @@ INSERT INTO students (id, name, cgpa)
 VALUES (1, 'Trishul', 9.00);
 
 SELECT * FROM students;
+
 INSERT INTO students(id,name,cgpa)
+VALUES
 
 sudo service postgresql start (to start the server)
 then 
