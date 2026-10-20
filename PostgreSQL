@@ -33,3 +33,6 @@ sudo -u postgres psql (to enter the console)
 postgres=#  CREATE DATABASE stdents; (to create a db)
 then
 \c stdents (to connect to the db)
+
+
+everytime we open the terminal:
