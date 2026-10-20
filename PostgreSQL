@@ -36,3 +36,4 @@ then
 
 
 everytime we open the terminal:
+we first need to start the server ny sudo service postgresql start
