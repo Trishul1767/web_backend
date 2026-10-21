@@ -25,7 +25,7 @@ VALUES (1, 'Trishul', 9.00);
 SELECT * FROM students;
 
 INSERT INTO students(id,name,cgpa)
-VALUES (2,'Mahir', 9.1);
+VALUES (2,'Mahir', 9.15);
 
 sudo service postgresql start (to start the server)
 then 
