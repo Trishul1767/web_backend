@@ -11,7 +11,7 @@ To create a DataBase
 To quit the postgreSQL console
 
 >> sudo -u postgres psql -d career_db
-This opens psql and connects directly to our career_db.
+This opens psql and connects directly to the created career_db.
 
 CREATE TABLE students (
     id INTEGER PRIMARY KEY,
