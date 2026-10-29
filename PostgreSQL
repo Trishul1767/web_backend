@@ -30,6 +30,7 @@ SELECT * FROM students ORDER BY id ASC;
 SELECT * FROM students ORDER BY id DESC;
 UPDATE students SET cgpa=9.10 WHERE name = 'Mahir';
 SELECT * FROM students WHERE id = 6;
+SELECT name, age FROM students WHERE age < 19;
 
 
 sudo service postgresql start (to start the server)
