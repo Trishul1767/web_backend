@@ -13,6 +13,8 @@ To quit the postgreSQL console
 >> sudo -u postgres psql -d career_db
 This opens psql and connects directly to the created career_db.
 
+ Storing Information (INSERT)
+
 CREATE TABLE students (
     id INTEGER PRIMARY KEY,
     name VARCHAR(100),
