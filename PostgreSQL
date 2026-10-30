@@ -14,6 +14,8 @@ To quit the postgreSQL console
 This opens psql and connects directly to the created career_db.
 
  Storing Information (INSERT)
+To put data into your newly created table, you use the INSERT INTO command. You specify the table, the columns you want to fill, and the values.
+
 
 CREATE TABLE students (
     id INTEGER PRIMARY KEY,
